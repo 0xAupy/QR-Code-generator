@@ -11,9 +11,22 @@
 <body>
     <div class="container">
         <h2>QR Code Generator</h2>
-        <input type="text" id="user-input" placeholder="Enter text or number">
-        <button onclick="generateQR()">Generate QR Code</button>
+        <div class="input-group">
+            <input type="text" id="user-input" placeholder="Enter text, URL, or contact information">
+        </div>
+        <div class="options">
+            <div class="size-option">
+                <label for="qr-size">Size:</label>
+                <select id="qr-size">
+                    <option value="128">Small</option>
+                    <option value="256" selected>Medium</option>
+                    <option value="512">Large</option>
+                </select>
+            </div>
+        </div>
+        <button id="generate-btn">Generate QR Code</button>
         <div id="qrcode"></div>
+        <button id="download-btn" class="download-btn">Download QR Code</button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
