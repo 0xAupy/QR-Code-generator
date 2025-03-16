@@ -1,6 +1,8 @@
 # QR Code Generator
 A simple web app that generates QR codes from user input using JavaScript and the QRCode.js library.
 
+**Website Link : https://0xaupy.github.io/QR-Code-generator/**
+
 ## 🚀 Features
 - Enter any text or number to generate a QR code.
 - Instant QR code generation.
